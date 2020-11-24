@@ -13,9 +13,9 @@ pipeline {
             steps {
                 echo "testing tool installation..."
                 sh 'java -version'
-                // sh 'which java'
+                sh 'which java'
                 sh 'mvn -version'
-                // sh 'which mvn'
+                sh 'which mvn'
             }
         }
         stage('source code checkout') {
